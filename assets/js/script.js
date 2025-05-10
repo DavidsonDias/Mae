@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const textoCompleto = `Oi mamãe!
+  const textoCompleto = `Oi Mamãe!
 
-Hoje é o seu dia, mas pra gente — eu, Estrela, Toddy e Léo — todo dia é dia de agradecer por ter você! A gente pode não falar com palavras (bom, o papai ajuda nisso), mas nosso rabinho balançando, nosso olhar cheio de amor e aquele jeitinho de ficar grudado em você dizem tudo: você é a melhor mãe do mundo!
+Hoje é o seu dia, mas pra gente — Eu"Papai", Estrela, Toddy, Simba e Léo — todo dia é dia de agradecer por ter você! A gente pode não falar com palavras (bom, o papai ajuda nisso), mas nosso rabinho balançando, nosso olhar cheio de amor e aquele jeitinho de ficar grudado em você dizem tudo: você é a melhor mãe do mundo!
 
 Você é quem cuida, quem dá carinho, quem abraça quando a gente tá triste ou com medo… é quem enche o potinho de ração (e às vezes dá um petisco extra, né?), é quem sabe exatamente o que a gente precisa, mesmo quando a gente só faz “au au” ou “miau”.
 
@@ -77,7 +77,7 @@ Essa homenagem que o papai fez… é uma lembrança da nossa historia, da nossa 
 Te amamos mais do que ração (e olha que isso é muito, hein!).
 
 Com lambidas, ronrons e muito amor,
-Estrela, Toddy, Léo (e papai também)...`;
+Estrela, Toddy, Simba, Léo (e Papai também)...`;
   
   const elemento = document.getElementById("cartaTexto");
   let index = 0;
