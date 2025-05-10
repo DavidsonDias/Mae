@@ -1,4 +1,3 @@
-
 const reasons = [
   "Porque você me completa.",
   "Porque seu sorriso ilumina meu dia.",
@@ -66,7 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 Hoje é o seu dia, mas pra gente — Eu"Papai", Estrela, Toddy, Simba e Léo — todo dia é dia de agradecer por ter você! A gente pode não falar com palavras (bom, o papai ajuda nisso), mas nosso rabinho balançando, nosso olhar cheio de amor e aquele jeitinho de ficar grudado em você dizem tudo: você é a melhor mãe do mundo!
 
-Você é quem cuida, quem dá carinho, quem abraça quando a gente tá triste ou com medo… é quem enche o potinho de ração (e às vezes dá um petisco extra, né?), é quem sabe exatamente o que a gente precisa, mesmo quando a gente só faz “au au” ou “miau”.
+Você é quem cuida, quem dá carinho, quem abraça quando a gente tá triste ou com medo… é quem enche o potinho de ração (e às vezes dá um petisco extra, né?), é quem sabe exatamente o que a gente precisa, mesmo quando a gente só faz “au au”.
+
+<strong>Mamãe… sou eu, o Simba. Sei que hoje eu não tô aí no sofá, nem deitadinho aos seus pés, mas queria que você soubesse que continuo com você — bem juntinho, no seu coração. Aqui do Céu, eu vejo tudo: o seu amor, o seu cuidado com todos nós, sua força linda. Obrigado por ter sido minha mamãe, por cada carinho, cada palavra, cada noite de aconchego. Eu fui muito feliz ao seu lado… e ainda sou, porque seu amor me alcança até aqui. Te amo pra sempre, tá? E tô aqui, do jeitinho que você sempre me imaginou: feliz, em paz e cheio de gratidão.</strong>
 
 Mamãe, você é nossa heroína. Sempre com um sorriso no rosto, mesmo nos dias difíceis. Sempre com um colo quentinho, mesmo cansada. A gente sente, mesmo sem entender tudo, que seu amor é gigante e acolhe cada um de nós com todo o coração.
 
