@@ -67,7 +67,7 @@ Hoje é o seu dia, mas pra gente — Eu"Papai", Estrela, Toddy, Simba e Léo —
 
 Você é quem cuida, quem dá carinho, quem abraça quando a gente tá triste ou com medo… é quem enche o potinho de ração (e às vezes dá um petisco extra, né?), é quem sabe exatamente o que a gente precisa, mesmo quando a gente só faz “au au”.
 
-<strong>Mamãe… sou eu, o Simba. Sei que hoje eu não tô aí no sofá, nem deitadinho aos seus pés, mas queria que você soubesse que continuo com você — bem juntinho, no seu coração. Aqui do Céu, eu vejo tudo: o seu amor, o seu cuidado com todos nós, sua força linda. Obrigado por ter sido minha mamãe, por cada carinho, cada palavra, cada noite de aconchego. Eu fui muito feliz ao seu lado… e ainda sou, porque seu amor me alcança até aqui. Te amo pra sempre, tá? E tô aqui, do jeitinho que você sempre me imaginou: feliz, em paz e cheio de gratidão.</strong>
+**Mamãe… sou eu, o Simba. Sei que hoje eu não tô aí no sofá, nem deitadinho aos seus pés, mas queria que você soubesse que continuo com você — bem juntinho, no seu coração. Aqui do Céu, eu vejo tudo: o seu amor, o seu cuidado com todos nós, sua força linda. Obrigado por ter sido minha mamãe, por cada carinho, cada palavra, cada noite de aconchego. Eu fui muito feliz ao seu lado… e ainda sou, porque seu amor me alcança até aqui. Te amo pra sempre, tá? E tô aqui, do jeitinho que você sempre me imaginou: feliz, em paz e cheio de gratidão.**
 
 Mamãe, você é nossa heroína. Sempre com um sorriso no rosto, mesmo nos dias difíceis. Sempre com um colo quentinho, mesmo cansada. A gente sente, mesmo sem entender tudo, que seu amor é gigante e acolhe cada um de nós com todo o coração.
 
@@ -79,17 +79,34 @@ Te amamos mais do que ração (e olha que isso é muito, hein!).
 
 Com lambidas, ronrons e muito amor,
 Estrela, Toddy, Simba, Léo (e Papai também)...`;
-  
-  const elemento = document.getElementById("cartaTexto");
+
+  const textoComHTML = textoCompleto
+    .replace(/\*\*(.*?)\*\*/gs, '<strong>$1</strong>')
+    .replace(/\n/g, '<br>');
+
+  const cartaElemento = document.getElementById("cartaTexto");
   let index = 0;
-  
+
   function escreverTexto() {
-    if (index < textoCompleto.length) {
-      elemento.textContent += textoCompleto.charAt(index);
+    cartaElemento.innerHTML = textoComHTML.substring(0, index);
+    if (index < textoComHTML.length) {
       index++;
-      setTimeout(escreverTexto, 30); // Velocidade da "digitação"
+      setTimeout(escreverTexto, 40); // velocidade da digitação
+    } else {
+      escreverAssinatura(); // Chama a assinatura depois que o texto termina
     }
   }
-  
-  escreverTexto();
+
+  const assinaturaTexto = "— Estrela, Toddy, Simba, Léo e Papai";
+  let i = 0;
+  function escreverAssinatura() {
+    const el = document.getElementById("assinatura");
+    if (i < assinaturaTexto.length) {
+      el.textContent += assinaturaTexto.charAt(i);
+      i++;
+      setTimeout(escreverAssinatura, 50);
+    }
+  }
+
+  escreverTexto(); // Inicia tudo
 });
