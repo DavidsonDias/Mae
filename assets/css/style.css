@@ -118,6 +118,18 @@ section, header, footer {
   font-family: 'Courier New', monospace;
 }
 
+#cartaTexto::after {
+  content: '|';
+  animation: piscarCursor 1s infinite;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+@keyframes piscarCursor {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 .nossos-pets {
   display: flex;
   flex-wrap: wrap;
